@@ -82,6 +82,14 @@ ol {
   list-style-type: none;
 }
 
+p {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
 button {
   font-size: inherit;
   line-height: inherit;
@@ -237,6 +245,25 @@ address {
   margin-top: 48px;
 }
 
+/* Features Section */
+.features {
+  padding-top: 120px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.features-title {
+  margin-bottom: 8px;
+}
+
 /* Team Section */
 
 .team {
@@ -250,7 +277,7 @@ address {
   background-color: var(--color-white);
 }
 
-/* Portfolio */
+/* Portfolio Section */
 
 .portfolio-link {
   background-color: var(--color-white);
