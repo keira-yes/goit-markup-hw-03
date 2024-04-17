@@ -179,6 +179,10 @@ address {
   padding: 0 50px;
 }
 
+.section {
+  padding: 120px 0;
+}
+
 /* Header */
 .header {
   padding: 24px 0;
@@ -257,7 +261,7 @@ address {
 
 /* Features Section */
 .features {
-  padding-top: 120px;
+  padding-bottom: 0;
 }
 
 .features-list {
@@ -271,9 +275,6 @@ address {
 }
 
 /* Services Section */
-.services {
-  padding: 120px 0;
-}
 
 .services-list {
   display: flex;
@@ -288,7 +289,6 @@ address {
 /* Team Section */
 
 .team {
-  padding: 120px 0;
   background-color: var(--color-light);
 }
 
@@ -314,7 +314,7 @@ address {
 
 /* Portfolio Section */
 .portfolio {
-  padding: 96px 0 120px;
+  padding-top: 96px;
 }
 
 .portfolio-filters {
@@ -337,19 +337,23 @@ address {
 
 .portfolio-link {
   display: block;
-  border: 1px solid var(--color-accent);
   background-color: var(--color-white);
 }
 
 .portfolio-link:hover {
-  border-color: var(--color-light);
   box-shadow: 0 2px 1px 0 rgba(var(--color-dark), 0.08),
     0 1px 1px 0 rgba(var(--color-dark), 0.16),
     0 1px 6px 0 rgba(var(--color-dark), 0.08);
 }
 
+.portfolio-link:hover .portfolio-info {
+  border-color: var(--color-light);
+}
+
 .portfolio-info {
   padding: 32px 16px;
+  border: 1px solid var(--color-accent);
+  border-top: none;
 }
 
 .portfolio-title {
